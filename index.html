@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Devs — Modern Websites. Real Results.</title>
+<meta name="description" content="Krishna Devs creates premium, modern websites, e-commerce stores, landing pages and web apps.">
+<style>
+:root{
+  --bg:#050507;--card:#0d0e12;--text:#f7f7f4;--muted:#999ba2;--line:rgba(255,255,255,.13);
+  --yellow:#ffcc45;--orange:#ff824f;--pink:#ff3fae;--purple:#8d63ff;--blue:#43a9ff;--green:#37df9b;
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 48px));margin:auto}
+.nav{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;letter-spacing:-1.5px}.logo span{background:linear-gradient(90deg,var(--orange),var(--pink),var(--purple));-webkit-background-clip:text;color:transparent}
+.navlinks{display:flex;gap:34px;color:#c2c3c7;font-size:13px}.navlinks a{transition:.2s}.navlinks a:hover{color:#fff}
+.navbtn,.cta{border-radius:999px;border:1px solid transparent;padding:12px 18px;font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:8px;transition:.25s}
+.navbtn{background:transparent;border-color:var(--purple);box-shadow:inset 0 0 22px #8d63ff12}.navbtn:hover{background:#8d63ff15;transform:translateY(-2px)}
+.waDot{color:var(--green);font-size:16px}
+
+.hero{position:relative;padding:76px 0 82px;overflow:hidden}
+.hero:before{content:"";position:absolute;width:720px;height:720px;right:-160px;top:-220px;background:radial-gradient(circle,#713cff25,transparent 65%);filter:blur(25px)}
+.heroGrid{position:relative;z-index:1;display:grid;grid-template-columns:47% 53%;align-items:center;gap:30px}
+.kicker{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffb85c55;background:#ff9b4210;padding:8px 13px;border-radius:999px;color:#e9d5bb;font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+.kicker b{color:var(--orange)}
+h1{font-size:clamp(57px,6.5vw,91px);line-height:.91;letter-spacing:-.075em;margin:23px 0 22px}
+.gradient{background:linear-gradient(100deg,var(--orange),var(--pink) 45%,var(--purple));-webkit-background-clip:text;color:transparent}
+.heroText{font-size:17px;line-height:1.65;color:var(--muted);max-width:570px}
+.promiseRow{display:flex;gap:25px;flex-wrap:wrap;margin-top:25px}
+.promise{display:flex;align-items:center;gap:8px;font-size:12px;color:#ddd}.promise i{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;border:1px solid #fff3;color:var(--yellow);font-style:normal}
+.heroBtns{display:flex;gap:11px;margin-top:27px;align-items:center;flex-wrap:wrap}
+.cta{background:linear-gradient(100deg,var(--yellow),var(--orange),var(--pink));color:#0a0a0b}.cta:hover{transform:translateY(-2px);box-shadow:0 15px 45px #ff4fae22}
+.play{display:inline-flex;align-items:center;gap:12px;color:#ddd;font-size:13px}.play span{width:45px;height:45px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}.play span:after{content:"";margin-left:3px;border-left:7px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.smallNote{font-size:10px;color:#676970;margin-top:15px}
+
+/* Hero mockup */
+.heroVisual{height:470px;position:relative}
+.laptop{position:absolute;right:3%;top:28px;width:92%;height:365px;transform:perspective(1200px) rotateY(-8deg) rotateX(2deg) rotateZ(-2deg);filter:drop-shadow(0 35px 40px #000)}
+.screen{height:100%;border:1px solid #fff3;border-radius:22px 22px 13px 13px;background:#0c0d11;padding:9px;box-shadow:0 0 70px #9b55ff18}
+.screenInner{height:100%;border-radius:15px;overflow:hidden;background:radial-gradient(circle at 75% 30%,#7c4dff35,transparent 30%),#101116;border:1px solid #fff1;position:relative;padding:28px}
+.screenNav{display:flex;justify-content:space-between;font-size:8px;color:#9fa1a8}.screenLogo{font-weight:900;color:#fff}
+.mockBig{margin-top:50px;font-size:36px;font-weight:900;line-height:.9;letter-spacing:-.06em}.mockBig em{font-style:normal;color:var(--orange)}
+.mockSub{color:#777;font-size:9px;max-width:250px;margin-top:15px}.mockBtn{margin-top:18px;display:inline-block;background:linear-gradient(90deg,var(--orange),var(--purple));border-radius:9px;padding:8px 13px;font-size:8px;font-weight:800}
+.glowOrb{position:absolute;width:115px;height:115px;border-radius:50%;right:8%;bottom:55px;background:radial-gradient(circle at 30% 30%,#ffe48b,var(--orange) 30%,var(--pink) 65%,var(--purple));box-shadow:0 0 70px #ff4fae66;z-index:3}
+.phone{position:absolute;right:-1%;bottom:25px;width:105px;height:215px;border:4px solid #191a1f;border-radius:20px;background:#111;z-index:4;box-shadow:0 25px 50px #000;transform:rotate(6deg)}
+.phone:before{content:"";position:absolute;inset:7px;border-radius:13px;background:linear-gradient(160deg,#191020,#17133b);border:1px solid #fff2}
+.phone:after{content:"Creative\\A Modern.\\A Effective.";white-space:pre;position:absolute;left:18px;top:45px;font-size:12px;line-height:1.35;font-weight:800;color:#fff}.phone:after{background:linear-gradient(180deg,#fff,var(--orange),var(--purple));-webkit-background-clip:text;color:transparent}
+.floatingCard{position:absolute;left:5%;top:95px;background:#111318d9;border:1px solid #fff2;border-radius:15px;padding:13px 15px;backdrop-filter:blur(15px);z-index:5;box-shadow:0 20px 40px #000}.floatingCard small{font-size:8px;color:var(--green)}.floatingCard strong{display:block;font-size:21px;margin-top:4px}
+.codeIcon{position:absolute;right:1%;top:20px;color:var(--purple);font-size:31px;z-index:5;filter:drop-shadow(0 0 14px #8d63ff)}
+
+/* Common */
+section{border-top:1px solid var(--line);padding:95px 0}
+.sectionHead{display:flex;justify-content:space-between;gap:35px;align-items:end}.eyebrow{color:var(--orange);font-size:10px;letter-spacing:.2em;font-weight:900;text-transform:uppercase;margin-bottom:13px}
+h2{font-size:clamp(42px,5.3vw,68px);line-height:.94;letter-spacing:-.07em}
+.sectionLead{color:var(--muted);font-size:16px;line-height:1.6;max-width:600px}
+
+/* Services creative */
+.serviceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:46px}
+.service{height:285px;border:1px solid var(--line);border-radius:22px;padding:23px;position:relative;overflow:hidden;background:linear-gradient(145deg,#111216,#0a0b0e);transition:.35s}
+.service:hover{transform:translateY(-8px) scale(1.01);border-color:var(--accent);box-shadow:0 25px 70px #000}
+.service:nth-child(1){--accent:var(--yellow);--rgb:255,204,69}.service:nth-child(2){--accent:#ff4f88;--rgb:255,79,136}.service:nth-child(3){--accent:var(--purple);--rgb:141,99,255}.service:nth-child(4){--accent:var(--blue);--rgb:67,169,255}.service:nth-child(5){--accent:var(--green);--rgb:55,223,155}.service:nth-child(6){--accent:var(--orange);--rgb:255,130,79}
+.service:before{content:"";position:absolute;width:210px;height:210px;right:-100px;bottom:-100px;border-radius:50%;background:radial-gradient(circle,rgba(var(--rgb),.34),rgba(var(--rgb),.04) 48%,transparent 70%);filter:blur(4px)}
+.service:after{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.75}
+.serviceIcon{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff8,var(--accent));box-shadow:0 0 30px rgba(var(--rgb),.25);font-size:21px;color:#08090b}
+.serviceNum{position:absolute;right:22px;top:25px;color:#55585e;font-size:10px}
+.service h3{font-size:23px;margin-top:52px;letter-spacing:-.045em}.service p{color:var(--muted);font-size:12px;line-height:1.55;max-width:280px;margin-top:10px}.service a{position:absolute;bottom:21px;color:var(--accent);font-size:11px;font-weight:800}
+
+/* Pricing */
+.pricing{padding-top:105px}.priceWrap{margin-top:42px;display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+.priceMain{min-height:345px;border:1px solid #ffb94b44;border-radius:27px;padding:34px;background:radial-gradient(circle at 85% 15%,#ff824f20,transparent 32%),linear-gradient(145deg,#17120e,#0d0e12);position:relative;overflow:hidden}
+.priceMain:after{content:"";position:absolute;width:260px;height:260px;right:-110px;bottom:-130px;border-radius:50%;border:1px solid #ffb94b33;box-shadow:0 0 80px #ff824f12}
+.priceTag{color:var(--yellow);font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:900}.priceMain h3{font-size:45px;line-height:.97;letter-spacing:-.065em;max-width:650px;margin:24px 0 16px}.priceMain p{color:#aaa;line-height:1.6;max-width:610px;font-size:14px}.priceMain strong{color:#fff}.quoteBtn{margin-top:25px}
+.includes{border:1px solid var(--line);border-radius:27px;padding:31px;background:#0d0f12}.includes h3{font-size:24px;margin-bottom:14px}.inc{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:11px;font-size:12px;color:#c5c6c8}.inc:last-child{border:0}.inc b{color:var(--yellow)}
+
+/* USP */
+.usp{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}.uspVisual{height:390px;border:1px solid var(--line);border-radius:28px;position:relative;overflow:hidden;background:radial-gradient(circle,#9b63ff15,transparent 50%),#0d0e12}.orb{position:absolute;width:190px;height:190px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid #fff2;box-shadow:0 0 90px #8d63ff18}.orb:before,.orb:after{content:"";position:absolute;border-radius:50%;inset:23px;border:1px solid #ffcc4555}.orb:after{inset:55px;border-color:#65f6d055}.orb span{position:absolute;inset:0;display:grid;place-items:center;font-size:60px;font-weight:950;background:linear-gradient(120deg,#fff,var(--yellow),var(--pink));-webkit-background-clip:text;color:transparent}.uspList{margin-top:28px}.uspItem{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}.uspItem b{color:var(--yellow);font-size:11px}.uspItem strong{font-size:13px}.uspItem span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+
+/* Final */
+.final{padding:130px 0;text-align:center}.final h2{max-width:850px;margin:auto}.final p{color:var(--muted);max-width:610px;margin:18px auto 28px}.footer{border-top:1px solid var(--line);padding:26px 0;color:#696b70;font-size:11px;display:flex;justify-content:space-between}
+
+@media(max-width:900px){.heroGrid,.priceWrap,.usp{grid-template-columns:1fr}.serviceGrid{grid-template-columns:1fr 1fr}.navlinks{display:none}.heroVisual{height:420px}.sectionHead{display:block}.sectionLead{margin-top:15px}}
+@media(max-width:600px){.container{width:min(var(--max),calc(100% - 32px))}.serviceGrid{grid-template-columns:1fr}.hero h1{font-size:56px}.hero{padding-top:55px}.promiseRow{gap:12px}.promise{font-size:11px}.heroVisual{height:360px}.laptop{width:94%;height:275px;right:3%}.browser{height:100%}.mockBig{font-size:28px}.mockCopy{left:22px;top:35px}.phone{width:78px;height:165px}.glowOrb{width:82px;height:82px}.floatingCard{left:0;top:70px}.priceMain h3{font-size:36px}.cta{width:100%}.footer{display:block}.footer span{display:block;margin:5px 0}}
+
+/* Floating WhatsApp */
+.whatsappFloat{
+  position:fixed;right:24px;bottom:24px;width:58px;height:58px;border-radius:50%;
+  display:grid;place-items:center;z-index:50;background:#20d86b;color:#06140b;
+  border:1px solid #ffffff33;box-shadow:0 12px 35px #000,0 0 30px #20d86b33;
+  font-size:27px;font-weight:900;transition:.25s
+}
+.whatsappFloat:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 18px 45px #000,0 0 38px #20d86b55}
+@media(max-width:600px){.whatsappFloat{right:16px;bottom:16px;width:52px;height:52px;font-size:24px}}
+
+</style>
+</head>
+
+<body>
+<header class="container">
+<nav class="nav">
+<a class="logo" href="#">Krishna <span>Devs</span></a>
+<div class="navlinks">
+<a href="#landing">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+</div>
+<a class="navbtn" href="https://wa.me/919102950078?text=Hi%20Krishna%20Devs%2C%20I%27d%20like%20a%20quote.">Get Quote <span class="waDot">◉</span></a>
+</nav>
+</header>
+
+<main>
+
+<section id="landing" class="hero">
+<div class="container heroGrid">
+<div>
+<div class="kicker"><b>✦</b> Modern websites that drive results</div>
+<h1>Modern Websites.<br>Real <span class="gradient">Results.</span></h1>
+<p class="heroText">We design and build premium digital experiences that help businesses grow, stand out and scale online.</p>
+<div class="promiseRow">
+<div class="promise"><i>ϟ</i>5 Days Delivery</div>
+<div class="promise"><i>✦</i>Free Demo</div>
+<div class="promise"><i>▤</i>Hosting Included</div>
+<div class="promise"><i>✓</i>Yearly Maintenance</div>
+</div>
+<div class="heroBtns">
+<a class="cta" href="https://wa.me/919102950078?text=Hi%20Krishna%20Devs%2C%20I%27d%20like%20a%20quote%20for%20a%20website.">Get Quote on WhatsApp <span>◉</span></a>
+<a class="play" href="#services"><span></span>See What We Build</a>
+</div>
+<p class="smallNote">Premium digital asset · Built for your business · Available 24/7</p>
+</div>
+
+<div class="heroVisual">
+<div class="codeIcon">&lt;/&gt;</div>
+<div class="laptop">
+<div class="screen">
+<div class="screenInner">
+<div class="screenNav"><span class="screenLogo">Krishna Devs</span><span>Home　 Work　 Services　 Contact</span></div>
+<div class="mockBig">We build digital<br><em>experiences.</em></div>
+<div class="mockSub">Strategy, design and development that gives ambitious businesses a better digital presence.</div>
+<div class="mockBtn">Start a Project ↗</div>
+</div>
+</div>
+</div>
+<div class="glowOrb"></div>
+<div class="phone"></div>
+<div class="floatingCard"><small>PROJECT LAUNCH</small><strong>5 Days</strong></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="sectionHead">
+<div><div class="eyebrow">✦ Our Services</div><h2>Everything You Need,<br>We've Got You <span class="gradient">Covered.</span></h2></div>
+<p class="sectionLead">From premium business websites to full web apps, we build the digital layer your business needs — with design that doesn't feel generic.</p>
+</div>
+
+<div class="serviceGrid">
+<div class="service"><div class="serviceIcon">▣</div><span class="serviceNum">01</span><h3>Business Websites</h3><p>Professional websites that build trust and turn visitors into customers.</p><a href="#contact">Learn More →</a></div>
+<div class="service"><div class="serviceIcon">🛒</div><span class="serviceNum">02</span><h3>E-commerce</h3><p>Powerful online stores that deliver smooth shopping experiences.</p><a href="#contact">Learn More →</a></div>
+<div class="service"><div class="serviceIcon">↗</div><span class="serviceNum">03</span><h3>Landing Pages</h3><p>High-converting pages designed for offers, launches and campaigns.</p><a href="#contact">Learn More →</a></div>
+<div class="service"><div class="serviceIcon">◇</div><span class="serviceNum">04</span><h3>Web Apps</h3><p>Custom web applications built for speed, performance and scalability.</p><a href="#contact">Learn More →</a></div>
+<div class="service"><div class="serviceIcon">↗</div><span class="serviceNum">05</span><h3>SEO Optimization</h3><p>Rank higher, get found faster and grow your organic traffic.</p><a href="#contact">Learn More →</a></div>
+<div class="service"><div class="serviceIcon">⚙</div><span class="serviceNum">06</span><h3>Maintenance & Support</h3><p>Updates, backups and yearly change credits to keep your site fresh.</p><a href="#contact">Learn More →</a></div>
+</div>
+</div>
+</section>
+
+<section id="pricing" class="pricing">
+<div class="container">
+<div class="eyebrow">✦ Pricing</div>
+<h2>Premium doesn't have<br>to mean <span class="gradient">expensive.</span></h2>
+<p class="sectionLead">We quote according to the project scope, so you pay for what your business actually needs.</p>
+<div class="priceWrap">
+<div class="priceMain">
+<div class="priceTag">The Krishna Devs promise</div>
+<h3>Less than your monthly office coffee bill.</h3>
+<p>You get a <strong>premium digital asset</strong> that keeps working for your business and helps bring in <strong>high-quality leads 24/7.</strong></p>
+<a class="cta quoteBtn" href="https://wa.me/919102950078?text=Hi%20Krishna%20Devs%2C%20I%27d%20like%20a%20custom%20quote.">Get Quote on WhatsApp →</a>
+</div>
+<div class="includes">
+<h3>Included with your project</h3>
+<div class="inc"><b>✦</b> Free Demo before we start</div>
+<div class="inc"><b>✦</b> 5 days launch target</div>
+<div class="inc"><b>✦</b> Hosting included</div>
+<div class="inc"><b>✦</b> Yearly maintenance from our side</div>
+<div class="inc"><b>✦</b> Few problem/change credits for the whole year</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="contact" class="final">
+<div class="container">
+<div class="eyebrow">✦ Let's Build</div>
+<h2>Your business is unique.<br>Your website should be too.</h2>
+<p>Tell us what you're building. We'll start with a free demo and show you what Krishna Devs can create for it.</p>
+<a class="cta" href="https://wa.me/919102950078?text=Hi%20Krishna%20Devs%2C%20I%27m%20interested%20in%20a%20free%20demo.">Start on WhatsApp →</a>
+</div>
+</section>
+
+</main>
+
+<footer class="container footer">
+<span>© 2026 Krishna Devs · Shivam Prashar</span>
+<span>Vrindavan, Uttar Pradesh, India · 9102950078</span>
+</footer>
+
+<a class="whatsappFloat"
+   href="https://wa.me/919102950078?text=Hi%20Krishna%20Devs%2C%20I%27d%20like%20a%20quote."
+   aria-label="Chat with Krishna Devs on WhatsApp"
+   title="Chat on WhatsApp">◉</a>
+
+</body>
+</html>
